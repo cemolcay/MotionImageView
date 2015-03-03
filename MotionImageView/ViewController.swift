@@ -19,6 +19,9 @@ class ViewController: UIViewController {
             image: UIImage (named: "yosemite.jpg")!)
         motionImage.center = view.center
         view.addSubview(motionImage)
+        
+        motionImage.layer.borderColor = UIColor.redColor().CGColor
+        motionImage.layer.borderWidth = 2
     }
 
 }
