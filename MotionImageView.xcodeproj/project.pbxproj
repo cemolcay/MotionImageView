@@ -13,6 +13,9 @@
 		B26633A91AA5B755002C614E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B26633A81AA5B755002C614E /* Images.xcassets */; };
 		B26633AC1AA5B755002C614E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26633AA1AA5B755002C614E /* LaunchScreen.xib */; };
 		B26633B81AA5B755002C614E /* MotionImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26633B71AA5B755002C614E /* MotionImageViewTests.swift */; };
+		B26633C21AA5B764002C614E /* MotionImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26633C11AA5B764002C614E /* MotionImageView.swift */; };
+		B26633C51AA5BB03002C614E /* yosemite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B26633C31AA5BB03002C614E /* yosemite.jpg */; };
+		B26633C61AA5BB03002C614E /* yosemiteWide.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B26633C41AA5BB03002C614E /* yosemiteWide.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		B26633B11AA5B755002C614E /* MotionImageViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionImageViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26633B61AA5B755002C614E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B26633B71AA5B755002C614E /* MotionImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionImageViewTests.swift; sourceTree = "<group>"; };
+		B26633C11AA5B764002C614E /* MotionImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionImageView.swift; sourceTree = "<group>"; };
+		B26633C31AA5BB03002C614E /* yosemite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yosemite.jpg; sourceTree = "<group>"; };
+		B26633C41AA5BB03002C614E /* yosemiteWide.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yosemiteWide.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +83,8 @@
 		B266339E1AA5B755002C614E /* MotionImageView */ = {
 			isa = PBXGroup;
 			children = (
-				B26633A11AA5B755002C614E /* AppDelegate.swift */,
+				B26633C11AA5B764002C614E /* MotionImageView.swift */,
 				B26633A31AA5B755002C614E /* ViewController.swift */,
-				B26633A51AA5B755002C614E /* Main.storyboard */,
-				B26633A81AA5B755002C614E /* Images.xcassets */,
-				B26633AA1AA5B755002C614E /* LaunchScreen.xib */,
 				B266339F1AA5B755002C614E /* Supporting Files */,
 			);
 			path = MotionImageView;
@@ -90,6 +93,12 @@
 		B266339F1AA5B755002C614E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B26633A11AA5B755002C614E /* AppDelegate.swift */,
+				B26633A51AA5B755002C614E /* Main.storyboard */,
+				B26633A81AA5B755002C614E /* Images.xcassets */,
+				B26633AA1AA5B755002C614E /* LaunchScreen.xib */,
+				B26633C31AA5BB03002C614E /* yosemite.jpg */,
+				B26633C41AA5BB03002C614E /* yosemiteWide.jpg */,
 				B26633A01AA5B755002C614E /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -194,6 +203,8 @@
 			files = (
 				B26633A71AA5B755002C614E /* Main.storyboard in Resources */,
 				B26633AC1AA5B755002C614E /* LaunchScreen.xib in Resources */,
+				B26633C61AA5BB03002C614E /* yosemiteWide.jpg in Resources */,
+				B26633C51AA5BB03002C614E /* yosemite.jpg in Resources */,
 				B26633A91AA5B755002C614E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +225,7 @@
 			files = (
 				B26633A41AA5B755002C614E /* ViewController.swift in Sources */,
 				B26633A21AA5B755002C614E /* AppDelegate.swift in Sources */,
+				B26633C21AA5B764002C614E /* MotionImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MotionImageView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,6 +364,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MotionImageView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -409,6 +423,7 @@
 				B26633BD1AA5B755002C614E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B26633BE1AA5B755002C614E /* Build configuration list for PBXNativeTarget "MotionImageViewTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +432,7 @@
 				B26633C01AA5B755002C614E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

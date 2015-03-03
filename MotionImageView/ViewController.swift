@@ -12,14 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        view.backgroundColor = UIColor (white: 247/255.0, alpha: 1)
+        
+        let motionImage = MotionImageView (
+            frame: CGRect (x: 10, y: 30, width: 200, height: 200),
+            image: UIImage (named: "yosemite.jpg")!)
+        motionImage.center = view.center
+        view.addSubview(motionImage)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
