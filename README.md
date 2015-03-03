@@ -6,7 +6,7 @@ An image view lets you move its image with gyro
 Demo 
 ----
 
-![alt tag]()
+![alt tag](https://raw.githubusercontent.com/cemolcay/MotionImageView/master/demo.gif)
 
 Usage
 -----
